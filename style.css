@@ -73,16 +73,20 @@ section {
 /* ==========================================
               Navbar
 =========================================== */
+
 .navbar a {
   font-size: 1.1rem;
  color: white;
-  margin-left: 3.5rem;
+ margin-left: 10px; /* Jarak antar item menu */
   transition: all;
   transition-duration: 300ms;
   border-bottom: 1px solid rgba(7, 230, 219, 0);
-  
+
+ 
+ 
 
   }
+  
   
   .navbar a:hover{
    border-bottom: 1px solid rgb(7, 230, 218);
@@ -95,6 +99,8 @@ section {
     display: none;
   
 }
+
+
 /* ==========================================
               Home
 =========================================== */
@@ -108,14 +114,14 @@ section {
   /* margin-left: 800px;
   margin-top: -480px; */
   margin-top: 5rem;
-  margin-right: -5rem;
+  margin-left: 100px;
   z-index: -1;
 
 }
 .home-img img {
-  width: 250px;
+  width: 350px;
   border-radius: 50%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
 
   
@@ -152,9 +158,12 @@ section {
 .home-content h3 {
   font-size: 3rem;
   font-weight: 700;
+
+  
 }
 .home-content h3:nth-child(1) {
   margin-top: 10rem;
+  
 }
 
 span {
@@ -166,6 +175,7 @@ span {
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
+ 
 }
 
 .social-media a {
@@ -189,8 +199,10 @@ span {
   -moz-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   -o-transition: 0.3s ease;
+ 
   
 }
+
 
 
 .social-media a:hover {
@@ -206,7 +218,7 @@ span {
   border-radius: 4rem;
   -webkit-border-radius: 4rem;
   -moz-border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
+ 
 
   -ms-border-radius: 4rem;
   -o-border-radius: 4rem;
@@ -245,6 +257,7 @@ span {
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
+  margin-left: 35%;
 }
 .about-content h3 {
   font-size: 2.1rem;
@@ -599,6 +612,17 @@ body {
   .certificate img {
     max-width: 100%;
     border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .certificate img:hover{
+    max-width: 100%;
+    border-radius: 5px;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     
   }
   
@@ -633,23 +657,35 @@ body {
 html{
   scroll-behavior: smooth;
 }
+.logo {
+  background-color: #fff;
+  width: 150px; /* Lebar tetap untuk semua card */
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
- 
+}
+.logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.logo-image {
+  width: 50px; 
+  height: 50px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+}
 
-
-
-
-
-     
-
-
-
-   
+.logo-text {
   
+  font-size: 1rem;
+       font-weight: 500;
+  color: #555;
+  margin: 20%;
+}
 
 
-
-  
-    
-
-  
