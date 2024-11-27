@@ -63,7 +63,7 @@ section {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
-.logo {
+.logoios {
   font-size: 2rem;
   color: var(--text-color);
   font-weight: 600;
