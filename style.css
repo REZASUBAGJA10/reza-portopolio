@@ -657,13 +657,14 @@ html{
 .logo {
 background-color: #fff;
 width: 150px; /* Lebar tetap untuk semua card */
-height: 150px;
+height: 139px;
 padding: 15px;
 border-radius: 10px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 text-align: center;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+margin-top: -26%;
+margin-left: 20%;
 }
 .logo:hover {
 transform: translateY(-5px);
@@ -675,6 +676,7 @@ height: 50px;
 margin: 10px;
 object-fit: cover;
 border-radius: 50%; /* Membuat gambar menjadi bulat */
+
 }
 .logo-text {
 
