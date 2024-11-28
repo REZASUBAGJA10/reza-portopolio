@@ -657,7 +657,7 @@ html{
 .logo {
 background-color: #fff;
 width: 150px; /* Lebar tetap untuk semua card */
-height: 139px;
+height: 136px;
 padding: 15px;
 border-radius: 10px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -683,7 +683,7 @@ border-radius: 50%; /* Membuat gambar menjadi bulat */
 font-size: 1rem;
      font-weight: 500;
 color: #555;
-margin: 5%;
+margin-top: -10%;
 }
 
 
