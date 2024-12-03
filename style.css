@@ -279,31 +279,7 @@ span {
   gap: 2rem;
   margin-bottom: 5rem;
 }
-.skils-container .services-box {
-  flex: 1 1 25rem;
-  background: var(--second-bg-color);
-  padding: 1rem 2rem 4rem;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-  text-align: center;
-  border: 0.2rem solid var(--bg-color);
-  transition: 0.5s ease;
-  -webkit-transition: 0.5s ease;
-  -moz-transition: 0.5s ease;
-  -ms-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-}
-.skils-container .services-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-}
+
 .skils-box i {
   font-size: 5rem;
   color: var(--main-color);
@@ -517,61 +493,60 @@ span {
   color: var(--second-bg-color);
 }
 .skills {
-    margin: 50px auto;
-    text-align: center;
-  }
-  
-  .skills h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .skills-category {
-    margin-bottom: 40px;
-  }
-  
-  .skills-category h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 150px); /* Lebar tetap untuk card */
-    gap: 20px;
-    justify-content: center; /* Grid berada di tengah */
-    justify-items: center; /* Elemen di dalam grid juga berada di tengah */
-  }
-  
-  .skill-card {
-    background-color: #fff;
-    width: 150px; /* Lebar tetap untuk semua card */
-    height: auto;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-  }
-  
-  .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .skill-card span {
-    display: block;
-    margin: 0 auto 10px;
-  }
-  
-  .skill-card p {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #555;
-  }
+  margin: 50px auto;
+  text-align: center;
+}
+
+.skills h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.skills-category {
+  margin-bottom: 40px;
+}
+
+.skills-category h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px); /* Lebar tetap untuk card */
+  gap: 20px;
+  justify-content: center; /* Grid berada di tengah */
+  justify-items: center; /* Elemen di dalam grid juga berada di tengah */
+}
+
+.skill-card {
+  background-color: #fff;
+  width: 150px; /* Lebar tetap untuk semua card */
+  height: auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card span {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
 /* style.css */
 body {
     font-family: Arial, sans-serif;
@@ -675,7 +650,7 @@ width: 50px;
 height: 50px;
 margin: 10px;
 object-fit: cover;
-border-radius: 50%; /* Membuat gambar menjadi bulat */
+border-radius: 50%;
 
 }
 .logo-text {
@@ -685,6 +660,18 @@ font-size: 1rem;
 color: #555;
 margin-top: -10%;
 }
+.css-logo{
+  margin-top: 29%;
+  margin-right: 40%;
+}
+.css-image{
+width: 50px; 
+height: 50px;
+margin: 10px;
+object-fit: cover;
+
+}
+
 
 
 
