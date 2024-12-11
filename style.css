@@ -73,33 +73,95 @@ section {
 /* ==========================================
               Navbar
 =========================================== */
-.navbar a {
-  font-size: 1.1rem;
- color: white;
- margin-left: 10px; /* Jarak antar item menu */
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 10px;
   transition: all;
   transition-duration: 300ms;
   border-bottom: 1px solid rgba(7, 230, 219, 0);
 
- 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
  
 
+ 
+}
+  .nav-links li :hover{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(7, 230, 218);
+  color: #00fbff;
   }
-  
-  
-  .navbar a:hover{
-   border-bottom: 1px solid rgb(7, 230, 218);
-    color: #00fbff;
-  }
-  
 
-  
-  #menu-icon {
-    color: var(--text-color);
-    font-size: 2rem;
-    display: none;
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
   
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
 /* ==========================================
               Home
 =========================================== */
@@ -113,7 +175,7 @@ section {
   /* margin-left: 800px;
   margin-top: -480px; */
   margin-top: 5rem;
-  margin-right: -5rem;
+  margin-right: 10;
   z-index: -1;
 
 }
@@ -122,6 +184,7 @@ section {
   border-radius: 50%;
   height: 250px;
   object-fit: cover;
+
 
   
 
@@ -638,7 +701,7 @@ border-radius: 10px;
 box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 text-align: center;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
-margin-top: -26%;
+margin-top: -27%;
 margin-left: 20%;
 }
 .logo:hover {
@@ -671,21 +734,95 @@ margin: 10px;
 object-fit: cover;
 
 }
+.card-logo {
+  background-color: #fff;
+  width: 150px; /* Lebar tetap untuk semua card */
+  height: 136px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: -60px ;
+}
+  .card-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+/* ==========================================
+              Breakpoints
+=========================================== */
+@media (max-width: 1200px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 
+  .home-content {
+    margin-top: 2rem;
+  }
 
+  .about-img img {
+    width: 200px;
+    height: 200px;
+  }
+}
 
+@media (max-width: 768px) {
+  .navbar a {
+    display: none;
+    
+  }
 
- 
+  #menu-icon {
+    display: block;
+    cursor: pointer;
+    
+  }
 
+  .home-img img {
+    width: 150px;
+    height: 150px;
+  }
 
+  .btn {
+    padding: 0.5rem 2rem;
+  }
 
+  .certificate-gallery .certificate {
+    width: 90%;
+    margin: auto;
+  }
+}
 
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
 
-     
+  .about-img img {
+    width: 150px;
+    height: 150px;
+  }
 
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
 
+  .contact form .input-box input {
+    width: 100%;
+  }
 
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
    
   
 
